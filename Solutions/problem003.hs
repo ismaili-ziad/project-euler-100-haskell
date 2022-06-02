@@ -1,6 +1,8 @@
 -- Solution to problem 003
 -- https://projecteuler.net/problem=3
 
+module Main where
+
 -- Get list of all factors of n.
 factors :: Integer -> [Integer]
 factors n = [x | x <- [1..n], mod n x == 0]
@@ -22,6 +24,9 @@ search x p i = if x == p then p else
 -- Answer.
 answer :: Integer
 answer = search 600851475143 2 0
+
+main :: IO()
+main = putStrLn (show answer)
 
 -- Explanation.
 -- We know that a number n is the largest prime factor of x when x/n only contains prime factors lesser than or equal to n.
