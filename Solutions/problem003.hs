@@ -25,6 +25,6 @@ answer = search 600851475143 2 0
 
 -- Explanation.
 -- We know that a number n is the largest prime factor of x when x/n only contains prime factors lesser than or equal to n.
--- The 'search' function starts from the first positive prime number (2) and attempts to divide it by 600851475143. If successful, it reattempts
+-- The 'search' function starts from the first positive prime number (2) and attempts to divide 600851475143. If successful, it reattempts
 -- with 2 again. If unsuccessful, it moves on to the next prime number. The function goes on until the divided number is equal to the prime number, suggesting that
 -- there is no further possible prime factorisation, hence, the largest prime factor was reached.
