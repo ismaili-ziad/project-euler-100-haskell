@@ -1,4 +1,3 @@
-
 -- Solution to problem 001
 -- https://projecteuler.net/problem=1
 
