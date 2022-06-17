@@ -18,8 +18,9 @@ prod ss = if length ss < 13 then 0 else
 -- Answer.
 answer :: String -> Int -> Int
 answer "" m = m
-answer (s:ss) m = if prod (s:ss) > m then
-    answer ss (prod (s:ss)) else answer ss m
+answer (s:ss) m = do
+    let p = prod (s:ss)
+    if p > m then answer ss p else answer ss m
 
 
 main :: IO()
