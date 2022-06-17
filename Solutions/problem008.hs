@@ -24,6 +24,6 @@ answer (s:ss) m = if prod (s:ss) > m then
 
 main :: IO()
 main = do 
-    file <- readFile "Files/text008.txt"
+    file <- readFile "../Files/text008.txt"
     let l = concat (lines file)
     print (answer l 0)
