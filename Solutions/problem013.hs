@@ -3,7 +3,6 @@
 
 module Main where
 
-
 -- Answer.
 answer :: [String] -> Integer
 answer = foldr (\ s -> (+) (read s :: Integer)) 0
